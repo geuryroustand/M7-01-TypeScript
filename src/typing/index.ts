@@ -19,25 +19,14 @@ export interface Track {
 
 export interface TrackDetail extends Track {
   isrc: string;
-
   share: string;
-
   track_position: number;
   disk_number: number;
-  rank: number;
   release_date: Date;
-  explicit_lyrics: boolean;
-  explicit_content_lyrics: number;
-  explicit_content_cover: number;
-  preview: string;
   bpm: number;
   gain: number;
   available_countries: string[];
   contributors: Artist[];
-  md5_image: string;
-  artist: Artist;
-  album: Album;
-  type: string;
 }
 
 export interface Album {
